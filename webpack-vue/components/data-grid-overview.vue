@@ -1,34 +1,34 @@
 <template>
   <div id="gridContainer">
-      <h2>Data Grid</h2>
-      <dx-data-grid
-        :dataSource="weekData"
-        :showRowLines="true"
-        :showBorders="true"
-        :sorting="sorting"
-        :paging="paging"
-        :columns="columns"
-      >
-        <div slot="chartCellTemplate" slot-scope="day">
-          <dx-sparkline
-            argumentField="date"
-            valueField="close"
-            type="line"
-            minColor="#f00"
-            maxColor="#2ab71b"
-            :pointSize="6"
-            :showMinMax="true"
-            :dataSource="day.data.dayClose"
-            :size="sparklineSize"
-            :tooltip="sparklineTooltip"
-          />        
-        </div>
-        <div slot="diffCellTemplate" slot-scope="data" :class="data | value | direction">
-            <span class="current-value">{{ data | value | currency }}</span>
-            <span class="diff">{{data | value | difference}}</span>
-        </div>
-      </dx-data-grid>
-      <br />
+    <h2>Data Grid</h2>
+    <dx-data-grid
+      :dataSource="weekData"
+      :showRowLines="true"
+      :showBorders="true"
+      :sorting="sorting"
+      :paging="paging"
+      :columns="columns"
+    >
+      <div slot="chartCellTemplate" slot-scope="day">
+        <dx-sparkline
+          argumentField="date"
+          valueField="close"
+          type="line"
+          minColor="#f00"
+          maxColor="#2ab71b"
+          :pointSize="6"
+          :showMinMax="true"
+          :dataSource="day.data.dayClose"
+          :size="sparklineSize"
+          :tooltip="sparklineTooltip"
+        />        
+      </div>
+      <div slot="diffCellTemplate" slot-scope="data" :class="data | value | direction">
+          <span class="current-value">{{ data | value | currency }}</span>
+          <span class="diff">{{data | value | difference}}</span>
+      </div>
+    </dx-data-grid>
+    <br />
   </div>  
 </template>
 
