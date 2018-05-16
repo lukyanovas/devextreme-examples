@@ -1,14 +1,14 @@
 <template>
-    <button-example/>
+    <data-grid-overview />
 </template>
 
 <script>
 
-import ButtonExample from "./components/button-example";
+import DataGridOverview from "./components/data-grid-overview";
 
 export default {
     components: {
-        ButtonExample
+        DataGridOverview
     },
     name: "app"
 }
