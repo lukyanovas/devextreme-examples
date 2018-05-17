@@ -1,9 +1,10 @@
 const { VueLoaderPlugin } = require('vue-loader');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./index.js",
   output: {
-    filename: "./public/js/app/bundle.js",
+    filename: "./public/js/app/bundle.js"
   },
   devServer: {
     port: 9900,
@@ -16,7 +17,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {
@@ -34,12 +35,15 @@ module.exports = {
         ]
       },
       { 
-        test: /\.(eot|svg|ttf|woff|woff2)$/, 
+        test: /\.(eot|svg|ttf|woff|woff2|png)$/, 
         use: "url-loader?name=[name].[ext]"
       }
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new CopyWebpackPlugin([
+      { from: 'components/images', to: 'public/images' }
+    ]),
   ]
 };
