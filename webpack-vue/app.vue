@@ -7,6 +7,7 @@
         <charts-overview />
         <gauges-overview />
         <navigation-overview />
+        <editors-overview />
     </div>
 </template>
 
@@ -19,6 +20,7 @@ import SchedulerOverview from "./components/scheduler-overview";
 import ChartsOverview from "./components/charts-overview";
 import GaugesOverview from "./components/gauges-overview";
 import NavigationOverview from "./components/navigation-overview";
+import EditorsOverview from "./components/editors-overview";
 
 
 export default {
@@ -29,7 +31,8 @@ export default {
         SchedulerOverview,
         ChartsOverview,
         GaugesOverview,
-        NavigationOverview
+        NavigationOverview,
+        EditorsOverview
     },
     name: "app"
 }
