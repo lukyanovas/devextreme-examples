@@ -6,6 +6,7 @@
         <scheduler-overview />
         <charts-overview />
         <gauges-overview />
+        <navigation-overview />
     </div>
 </template>
 
@@ -17,6 +18,7 @@ import TreeListOverview from "./components/tree-list-overview";
 import SchedulerOverview from "./components/scheduler-overview";
 import ChartsOverview from "./components/charts-overview";
 import GaugesOverview from "./components/gauges-overview";
+import NavigationOverview from "./components/navigation-overview";
 
 
 export default {
@@ -26,7 +28,8 @@ export default {
         TreeListOverview,
         SchedulerOverview,
         ChartsOverview,
-        GaugesOverview
+        GaugesOverview,
+        NavigationOverview
     },
     name: "app"
 }
