@@ -195,14 +195,14 @@ var data = [{
 
 </script>
 
-<style>
+<style scoped>
 
 .dx-scheduler-date-table-other-month.dx-scheduler-date-table-cell {
     opacity: 1;
     color: rgba(0, 0, 0, 0.3);
 }
 
-.dx-scheduler-group-header-content {
+.dx-template-wrapper {
     position: relative;
 }
 

@@ -9,6 +9,7 @@
         <navigation-overview />
         <editors-overview />
         <forms-overview />
+        <actions-overview />
     </div>
 </template>
 
@@ -23,7 +24,7 @@ import GaugesOverview from "./components/gauges-overview";
 import NavigationOverview from "./components/navigation-overview";
 import EditorsOverview from "./components/editors-overview";
 import FormsOverview from "./components/forms-overview";
-
+import ActionsOverview from "./components/actions-overview";
 
 
 export default {
@@ -36,7 +37,8 @@ export default {
         GaugesOverview,
         NavigationOverview,
         EditorsOverview,
-        FormsOverview
+        FormsOverview,
+        ActionsOverview
     },
     name: "app"
 }
