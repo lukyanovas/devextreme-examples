@@ -8,6 +8,7 @@
         <gauges-overview />
         <navigation-overview />
         <editors-overview />
+        <forms-overview />
     </div>
 </template>
 
@@ -21,6 +22,8 @@ import ChartsOverview from "./components/charts-overview";
 import GaugesOverview from "./components/gauges-overview";
 import NavigationOverview from "./components/navigation-overview";
 import EditorsOverview from "./components/editors-overview";
+import FormsOverview from "./components/forms-overview";
+
 
 
 export default {
@@ -32,7 +35,8 @@ export default {
         ChartsOverview,
         GaugesOverview,
         NavigationOverview,
-        EditorsOverview
+        EditorsOverview,
+        FormsOverview
     },
     name: "app"
 }
