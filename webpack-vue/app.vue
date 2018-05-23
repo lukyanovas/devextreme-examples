@@ -5,6 +5,7 @@
         <tree-list-overview />
         <scheduler-overview />
         <charts-overview />
+        <gauges-overview />
     </div>
 </template>
 
@@ -15,6 +16,8 @@ import PivotGridOverview from "./components/pivot-grid-overview";
 import TreeListOverview from "./components/tree-list-overview";
 import SchedulerOverview from "./components/scheduler-overview";
 import ChartsOverview from "./components/charts-overview";
+import GaugesOverview from "./components/gauges-overview";
+
 
 export default {
     components: {
@@ -22,7 +25,8 @@ export default {
         PivotGridOverview,
         TreeListOverview,
         SchedulerOverview,
-        ChartsOverview
+        ChartsOverview,
+        GaugesOverview
     },
     name: "app"
 }
