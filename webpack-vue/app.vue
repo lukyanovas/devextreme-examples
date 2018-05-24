@@ -11,6 +11,7 @@
         <forms-overview />
         <actions-overview />
         <maps-overview />
+        <dialogs-overview />
     </div>
 </template>
 
@@ -27,6 +28,7 @@ import EditorsOverview from "./components/editors-overview";
 import FormsOverview from "./components/forms-overview";
 import ActionsOverview from "./components/actions-overview";
 import MapsOverview from "./components/maps-overview";
+import DialogsOverview from "./components/dialogs-overview";
 
 
 export default {
@@ -41,7 +43,8 @@ export default {
         EditorsOverview,
         FormsOverview,
         ActionsOverview,
-        MapsOverview
+        MapsOverview,
+        DialogsOverview
     },
     name: "app"
 }
